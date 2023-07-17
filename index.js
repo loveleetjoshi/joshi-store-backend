@@ -8,7 +8,7 @@ const paymentRoutes = require("./src/routes/paymentRoutes");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://joshistore.netlify.app"],
+    origin: ["http://localhost:3000"],
   })
 );
 app.use(bodyParser.json()); // Parse JSON bodies
