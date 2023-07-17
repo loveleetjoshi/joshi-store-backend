@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "copyfiles -R src/**/* dist",
+    "build": "cp -R src dist",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
