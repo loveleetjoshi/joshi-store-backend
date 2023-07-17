@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "xcopy /E /I /Y src dist",
+    "build": "copyfiles -R src/**/* dist",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
