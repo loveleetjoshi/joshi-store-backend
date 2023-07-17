@@ -6,7 +6,12 @@ const app = express();
 const orderRoutes = require("./src/routes/orderRoutes");
 const paymentRoutes = require("./src/routes/paymentRoutes");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    origin: "https://joshistore.netlify.app",
+  })
+);
 app.use(bodyParser.json()); // Parse JSON bodies
 app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
